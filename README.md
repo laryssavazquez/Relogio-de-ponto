@@ -1,25 +1,41 @@
-# Relogio de ponto
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitema de Relogio De Ponto</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema Relógio de Ponto</title>
+</head>
+<body>
 
-    <h1>Relógio de Ponto</h1>
-</div>
+    <div class="relogio">
+        <div class="display">00:00:00</div>
+        <footer> Programa de Registro de Ponto - Laryssa Vazquez</footer>
+     </div>
 
-<div>
-    <form>
-        <input type="text" id="nome">
-        <br><br>
-        <input type="number" id="matricula">
-        <br><br>
-        <button type="button" id="botaoPonto">Marque seu Ponto</button>
-    </form>
-</div>
+    <div>
+        <div class="calendario">
+            <span id="diaSemana">Dia da Semana</span>
+            <span>:</span>
 
-<script src="app.js"></script>
+            <span id="diaMes">Dia da Mes</span>
+            <span>:</span>
+
+            <span id="ano">Ano</span>
+            <span>:</span>
+    </div>
+
+    <div class="formulario">
+        <form>
+            <input type="text" id="nome">
+            <br><br>
+            <input type="number" id="matricula">
+            <br><br>
+            <button type="button" id="botaoPonto">Marque seu Ponto</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
